@@ -16,3 +16,38 @@ The idea is to make it as simple as possible to set up and use.
 - Assign points to your activities
 
 and various other things. 
+
+## For developers
+
+Stack:
+- Expo
+- React Native
+- Typescript
+- Prisma
+- Tailwind
+- Sqlite
+
+Essential commands:
+
+```bash
+
+# clone the repo
+git clone https://github.com/yashweblife/Ghara.git
+
+# installation
+cd server && npm install
+cd ..
+cd client/GHARA && npm install
+cd ../web/GHARA && npm install
+
+# start the server
+cd server && npm run dev
+
+# start the client
+cd ../client/GHARA && npm run start
+
+# start the web
+cd ../web/GHARA && npm run dev
+```
+
+Once we have docker integrated, these things will become easier to manage (I promise).
