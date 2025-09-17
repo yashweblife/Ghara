@@ -18,7 +18,6 @@ model User {
 
 model Point {
   id     String   @id @default(cuid())
-  name   String
   date   DateTime
   source String
   user   User     @relation(fields: [userId], references: [id])
