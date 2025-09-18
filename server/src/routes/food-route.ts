@@ -10,3 +10,5 @@ const router = Router();
  * put    /food/:id
  * delete /food/:id
  */
+
+export default router;
