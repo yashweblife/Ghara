@@ -11,3 +11,5 @@ const router = Router();
  * put    /user/:id
  * delete /user/:id
  */
+
+export default router;
