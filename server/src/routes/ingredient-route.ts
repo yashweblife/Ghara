@@ -10,3 +10,5 @@ const router = Router();
  * put    /ingredient/:id
  * delete /ingredient/:id
  */
+
+export default router;
