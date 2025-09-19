@@ -9,3 +9,7 @@ const router = Router();
  * put    /product/:id
  * delete /product/:id
  */
+
+
+
+export default router;
