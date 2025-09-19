@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { toBeImplemented } from "../utils";
+import { createProduct, deleteProductById, getAllProducts, getProductsById, updateProductById } from "../controllers/product-controller";
+import { } from "../utils";
 
 const router = Router();
 /**
@@ -12,10 +13,10 @@ const router = Router();
  */
 
 router
-    .get('/', toBeImplemented)
-    .get('/:id', toBeImplemented)
-    .post('/', toBeImplemented)
-    .put('/:id', toBeImplemented)
-    .delete('/:id', toBeImplemented);
+    .get('/', getAllProducts)
+    .get('/:id', getProductsById)
+    .post('/', createProduct)
+    .put('/:id', updateProductById)
+    .delete('/:id', deleteProductById);
 
 export default router;
