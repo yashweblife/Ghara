@@ -1,4 +1,11 @@
 import { Router } from "express";
+import {
+    createFood,
+    deleteFoodById,
+    getAllFoods,
+    getFoodById,
+    updateFoodById
+} from "../controllers/food-controller";
 
 const router = Router();
 
@@ -11,10 +18,10 @@ const router = Router();
  * delete /food/:id
  */
 router
-    .get('/', (req, res) => { })
-    .get('/:id', () => { })
-    .post('/', () => { })
-    .put('/:id', () => { })
-    .delete('/:id', () => { })
+    .get('/', getAllFoods)
+    .get('/:id', getFoodById)
+    .post('/', createFood)
+    .put('/:id', updateFoodById)
+    .delete('/:id', deleteFoodById);
 
 export default router;
