@@ -11,7 +11,7 @@ const router = Router();
  * delete /food/:id
  */
 router
-    .get('/', () => { })
+    .get('/', (req, res) => { })
     .get('/:id', () => { })
     .post('/', () => { })
     .put('/:id', () => { })
