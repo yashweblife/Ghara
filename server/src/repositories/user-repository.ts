@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export const UserRepository = {
+const repository = {
     findAll: async () => await prisma.user.findMany(),
     findById: async (id: number) => await prisma.user.findUnique({ where: { id } }),
     findUserPoints: async (id: number) => await prisma.point.findMany({ where: { userId: id } }),
@@ -10,3 +10,4 @@ export const UserRepository = {
     update: async (id: number, name: string, password: string) => await prisma.user.update({ where: { id }, data: { name, password } }),
     delete: async (id: number) => await prisma.user.delete({ where: { id } })
 }
+export default repository;
