@@ -1,4 +1,5 @@
 import type { Request, Response } from "express";
+import { toUserDTO } from "../models/user-model";
 import userRepo from "../repositories/user-repository";
 import {
     checkIfNullish,
@@ -11,7 +12,7 @@ export function getAllUsers(req: Request, res: Response) {
         if (checkIfNullish(users)) {
             throw { status: 500, message: 'Failed to fetch all users\nUsers was nullish ' }
         }
-        res.status(200).json(users);
+        res.status(200).json(toUserDTO(users));
     } catch (err: any) {
         res.status(err.status || 500).send(err.message || ISE)
     }
