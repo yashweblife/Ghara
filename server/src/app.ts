@@ -5,7 +5,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/api', FoodRoute);
+app.use('/api/food', FoodRoute);
 app.get('/', (req: Request, res: Response) => {
     res.send('hello world');
 })
