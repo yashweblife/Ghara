@@ -10,5 +10,11 @@ const router = Router();
  * put    /food/:id
  * delete /food/:id
  */
+router
+    .get('/', () => { })
+    .get('/:id', () => { })
+    .post('/', () => { })
+    .put('/:id', () => { })
+    .delete('/:id', () => { })
 
 export default router;
