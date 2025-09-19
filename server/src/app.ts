@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api/food', FoodRoute);
 app.get('/', (req: Request, res: Response) => {
-    res.send('hello world');
+    res.json({ message: 'hello world' });
 })
 
 app.use((req: Request, res: Response) => {
