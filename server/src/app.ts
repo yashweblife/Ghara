@@ -17,7 +17,9 @@ app.use('/api/point', PointRoute);
 app.use('/api/ingredient', IngredientRoute);
 app.use('/api/product', ProductRoute);
 app.get('/', (req: Request, res: Response) => {
-    res.json({ message: 'hello world' });
+    res.json({
+        message: 'Hello World'
+    })
 })
 
 app.use((req: Request, res: Response) => {
