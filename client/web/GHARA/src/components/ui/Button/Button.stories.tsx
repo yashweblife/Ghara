@@ -16,18 +16,19 @@ export const Default: Story = {
   }
 };
 
-export const SizeLarge: Story = {
-  args: {
-    children: "add",
-    size: "large",
-  }
-}
 export const SizeSmall: Story = {
   args: {
     children: "add",
     size: "small",
   }
 }
+export const SizeLarge: Story = {
+  args: {
+    children: "add",
+    size: "large",
+  }
+}
+
 export const VariantPrimary: Story = {
   args: {
     children: "add",
