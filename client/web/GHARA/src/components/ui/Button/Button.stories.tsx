@@ -25,7 +25,7 @@ export const SizeLarge: Story = {
 export const SizeSmall: Story = {
   args: {
     children: "add",
-    size: "large",
+    size: "small",
   }
 }
 export const VariantPrimary: Story = {
