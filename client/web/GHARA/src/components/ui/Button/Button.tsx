@@ -6,16 +6,16 @@ export type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'size'> 
     size?: "small" | "medium" | "large",
     className?: string
 }
-const defaultStyle = 'px-20'
+const defaultStyle = 'px-1 py-2 rounded-md shadow-lg cursor-pointer hover:shadow-sm'
 const variants = {
-    default: 'bg-red-200',
-    primary: 'bg-red-500',
-    secondary: 'bg-red-100',
+    default: 'bg-emerald-200',
+    primary: 'bg-sky-500 text-white',
+    secondary: 'bg-emerald-100',
 }
 const sizes = {
-    small: 'p-5',
-    medium: 'p-7',
-    large: 'p-10'
+    small: 'px-5',
+    medium: 'px-7',
+    large: 'px-10'
 }
 
 export default function Button({
@@ -27,7 +27,6 @@ export default function Button({
 }: ButtonProps) {
 
     const styles = `${defaultStyle} ${variants[variant]} ${sizes[size]} ${className ?? ''}`
-    console.log(styles)
     return (
         <button className={styles} {...props}>
             {children}
