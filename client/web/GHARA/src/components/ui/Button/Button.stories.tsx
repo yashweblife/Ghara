@@ -12,17 +12,31 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "add"
+    children: "add",
   }
 };
 
-export const Size: Story = {
+export const SizeLarge: Story = {
   args: {
-    children: "add"
+    children: "add",
+    size: "large",
   }
 }
-export const Variant: Story = {
+export const SizeSmall: Story = {
   args: {
-    children: "add"
+    children: "add",
+    size: "large",
+  }
+}
+export const VariantPrimary: Story = {
+  args: {
+    children: "add",
+    variant: "primary",
+  }
+}
+export const VariantSecondary: Story = {
+  args: {
+    children: "add",
+    variant: "secondary",
   }
 }
