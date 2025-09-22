@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import Button from "./components/ui/Button/Button"
 
 function App() {
   useEffect(() => {
@@ -29,21 +30,9 @@ function App() {
         <nav
           className="flex gap-5"
         >
-          <button
-            className="bg-gray-200 px-4 py-2 rounded-full"
-          >
-            Account
-          </button>
-          <button
-            className="bg-gray-200 px-4 py-2 rounded-full"
-          >
-            Points
-          </button>
-          <button
-            className="bg-gray-200 px-4 py-2 rounded-full"
-          >
-            Grocery List
-          </button>
+          <Button variant="primary" size='large'>hello</Button>
+          <Button variant="primary" size='large'>hello</Button>
+          <Button variant="primary" size='large'>hello</Button>
         </nav>
       </header>
     </>
