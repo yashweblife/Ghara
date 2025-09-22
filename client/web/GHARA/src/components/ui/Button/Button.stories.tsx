@@ -1,5 +1,5 @@
+import { PlusIcon } from '@heroicons/react/24/solid';
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import Button from './Button';
 
 const meta = {
@@ -39,5 +39,17 @@ export const VariantSecondary: Story = {
   args: {
     children: "Add",
     variant: "secondary",
+  }
+}
+export const IconButtonHorizontal: Story = {
+  args: {
+    children: <><PlusIcon /> Add</>,
+    direction: 'horizontal'
+  }
+}
+export const IconButtonVertical: Story = {
+  args: {
+    direction: 'vertical',
+    children: <><PlusIcon />Add</>
   }
 }
