@@ -18,7 +18,34 @@ function App() {
   }
   return (
     <>
-
+      <header
+        className="w-full flex justify-between align-center px-10 py-5"
+      >
+        <h1
+          className="text-4xl font-bold"
+        >
+          GHARA
+        </h1>
+        <nav
+          className="flex gap-5"
+        >
+          <button
+            className="bg-gray-200 px-4 py-2 rounded-full"
+          >
+            Account
+          </button>
+          <button
+            className="bg-gray-200 px-4 py-2 rounded-full"
+          >
+            Points
+          </button>
+          <button
+            className="bg-gray-200 px-4 py-2 rounded-full"
+          >
+            Grocery List
+          </button>
+        </nav>
+      </header>
     </>
   )
 }
