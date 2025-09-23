@@ -12,44 +12,61 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Add",
+    text: 'Add'
   }
 };
 
 export const SizeSmall: Story = {
   args: {
-    children: "Add",
-    size: "small",
+    size: "sm",
+    text: 'Add'
   }
 }
 export const SizeLarge: Story = {
   args: {
-    children: "Add",
-    size: "large",
+    size: "lg",
+    text: 'Add'
   }
 }
 
 export const VariantPrimary: Story = {
   args: {
-    children: "Add",
     variant: "primary",
+    text: 'Add'
   }
 }
-export const VariantSecondary: Story = {
+export const VariantOutlined: Story = {
   args: {
-    children: "Add",
-    variant: "secondary",
+    variant: "outlined",
+    text: 'Add'
   }
 }
-export const IconButtonHorizontal: Story = {
+
+export const IconButtonLeft: Story = {
   args: {
-    children: <><PlusIcon /> Add</>,
-    direction: 'horizontal'
+    icon: <PlusIcon />,
+    text: 'Add',
+    placement: 'left'
   }
 }
-export const IconButtonVertical: Story = {
+export const IconButtonTop: Story = {
   args: {
-    direction: 'vertical',
-    children: <><PlusIcon />Add</>
+    placement: 'top',
+    icon: <PlusIcon />,
+    text: "Add"
+  }
+}
+export const IconButtonRight: Story = {
+  args: {
+    placement: 'right',
+    icon: <PlusIcon />,
+    text: "Add"
+  }
+}
+export const IconButtonBottom: Story = {
+  args: {
+    placement: 'bottom',
+    icon: <PlusIcon />,
+    text: "Add"
   }
 }
