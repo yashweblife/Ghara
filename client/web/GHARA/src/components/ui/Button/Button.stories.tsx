@@ -1,7 +1,6 @@
-import { PlusIcon } from '@heroicons/react/24/solid';
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { FaPlus } from 'react-icons/fa';
 import Button from './Button';
-
 const meta = {
   component: Button,
 } satisfies Meta<typeof Button>;
@@ -29,9 +28,15 @@ export const SizeLarge: Story = {
   }
 }
 
-export const VariantPrimary: Story = {
+export const VariantSolid: Story = {
   args: {
-    variant: "primary",
+    variant: "solid",
+    text: 'Add'
+  }
+}
+export const VariantGhost: Story = {
+  args: {
+    variant: "ghost",
     text: 'Add'
   }
 }
@@ -44,29 +49,37 @@ export const VariantOutlined: Story = {
 
 export const IconButtonLeft: Story = {
   args: {
-    icon: <PlusIcon />,
+    icon: <FaPlus />,
     text: 'Add',
     placement: 'left'
   }
 }
 export const IconButtonTop: Story = {
   args: {
+    icon: <FaPlus />,
     placement: 'top',
-    icon: <PlusIcon />,
     text: "Add"
   }
 }
 export const IconButtonRight: Story = {
   args: {
+    icon: <FaPlus />,
     placement: 'right',
-    icon: <PlusIcon />,
     text: "Add"
   }
 }
 export const IconButtonBottom: Story = {
   args: {
+    icon: <FaPlus />,
     placement: 'bottom',
-    icon: <PlusIcon />,
     text: "Add"
+  }
+}
+
+export const ButtonRoundedFull: Story = {
+  args: {
+    rounded: 'full',
+    text: "Add",
+
   }
 }
