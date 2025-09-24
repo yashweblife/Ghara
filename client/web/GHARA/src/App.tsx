@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import Header from "./components/main/Header/Header";
+import Hero from "./components/main/Hero/Hero";
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
   return (
     <>
       <Header />
+      <Hero />
     </>
   )
 }
