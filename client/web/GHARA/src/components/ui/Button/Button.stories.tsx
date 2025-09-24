@@ -47,6 +47,31 @@ export const VariantOutlined: Story = {
   }
 }
 
+export const ButtonRoundedFull: Story = {
+  args: {
+    rounded: 'full',
+    text: "Add",
+  }
+}
+export const ButtonRoundedPill: Story = {
+  args: {
+    rounded: 'pill',
+    text: "Add",
+  }
+}
+export const ButtonRoundedSmall: Story = {
+  args: {
+    rounded: 'sm',
+    text: "Add",
+  }
+}
+export const ButtonRoundedLarge: Story = {
+  args: {
+    rounded: 'lg',
+    text: "Add",
+  }
+}
+
 export const IconButtonLeft: Story = {
   args: {
     icon: <FaPlus />,
@@ -75,11 +100,11 @@ export const IconButtonBottom: Story = {
     text: "Add"
   }
 }
-
-export const ButtonRoundedFull: Story = {
+export const IconButtonRound: Story = {
   args: {
-    rounded: 'full',
-    text: "Add",
-
+    icon: <FaPlus />,
+    placement: 'bottom',
+    text: '',
+    rounded: 'full'
   }
 }
