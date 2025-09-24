@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Header from "./components/main/Header/Header";
 import Hero from "./components/main/Hero/Hero";
-
 function App() {
   useEffect(() => {
     test()
