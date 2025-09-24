@@ -6,8 +6,8 @@ type IconPlacement = 'left' | 'right' | 'top' | 'bottom';
 
 // Define the main component props interface
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    text: string;
-    onClic?: () => void;
+    text?: string;
+    onClick?: () => void;
     variant?: ButtonVariant;
     size?: ButtonSize;
     icon?: React.ReactNode;
