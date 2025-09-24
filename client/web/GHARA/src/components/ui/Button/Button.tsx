@@ -7,7 +7,7 @@ type IconPlacement = 'left' | 'right' | 'top' | 'bottom';
 // Define the main component props interface
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string;
-    onClick: () => void;
+    onClic?: () => void;
     variant?: ButtonVariant;
     size?: ButtonSize;
     icon?: React.ReactNode;
@@ -83,12 +83,12 @@ export default function Button({
     return (
         <button
             className={finalClasses}
-            onClick={onClick}
+            onClick={onClick ?? onClick}
             // Spread the rest of the props (type, disabled, etc.)
             {...rest}
         >
             {/* Render the icon if provided */}
-            {icon}
+            {icon ?? icon}
 
             {/* Render the text */}
             <span>{text}</span>
