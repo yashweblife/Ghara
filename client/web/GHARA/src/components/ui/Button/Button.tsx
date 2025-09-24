@@ -50,7 +50,7 @@ export default function Button({
     const variantClasses: Record<ButtonVariant, string> = {
         // Gorgeous Solid Variant
         solid:
-            'bg-sky-600 hover:bg-sky-700 text-white shadow-lg shadow-sky-500/50 focus:ring-sky-300',
+            'bg-sky-600 hover:bg-sky-700 text-white shadow-lg shadow-sky-500/20 focus:ring-sky-300',
         // Elegant Outlined Variant
         outlined:
             'bg-white text-sky-600 border border-sky-600 hover:bg-sky-50 hover:border-sky-700 focus:ring-sky-300',
@@ -92,7 +92,7 @@ export default function Button({
             {icon ?? icon}
 
             {/* Render the text */}
-            <span>{text}</span>
+            {text ?? <span>{text}</span>}
         </button>
     );
 };
