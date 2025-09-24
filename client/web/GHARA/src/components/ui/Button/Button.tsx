@@ -1,7 +1,7 @@
 // Define the available literal values for each prop to enforce strict typing
 type ButtonVariant = 'solid' | 'outlined' | 'ghost';
 type ButtonSize = 'sm' | 'md' | 'lg';
-type ButtonRounded = 'sm' | 'md' | 'lg' | 'full';
+type ButtonRounded = 'sm' | 'md' | 'lg' | 'full' | 'pill';
 type IconPlacement = 'left' | 'right' | 'top' | 'bottom';
 
 // Define the main component props interface
@@ -23,7 +23,7 @@ export default function Button({
     size = 'md',
     icon,
     placement = 'left',
-    text,
+    text = '',
     rounded = 'md',
     onClick,
     className = '',
@@ -37,7 +37,8 @@ export default function Button({
         sm: 'rounded-sm',
         md: 'rounded-md',
         lg: 'rounded-lg',
-        full: 'rounded-full',
+        full: 'rounded-full aspect-square',
+        pill: 'rounded-full',
     };
 
     const sizeClasses: Record<ButtonSize, string> = {
