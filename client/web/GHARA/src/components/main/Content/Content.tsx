@@ -1,6 +1,5 @@
-import serverImage from '../../../../public/server-status.svg'
-import todoImage from '../../../../public/to-do-app.svg'
-// import visualImage from '../../../../public/visual-data.svg'
+import serverImage from '#/server-status.svg'
+import todoImage from '#/to-do-app.svg'
 import visualImage from '#/visual-data.svg'
 
 import Card, { CardContent, CardHeader, CardImage } from "@/components/ui/Card/Card"
