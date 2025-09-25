@@ -5,7 +5,7 @@ export default function Header() {
 
     return (
         <header
-            className="dark:bg-gray-900 py-10 px-2 flex-col w-full flex md:flex-row items-center align-middle md:justify-between md:px-5 md:py-5"
+            className="dark:bg-gray-900 py-10 px-2 flex-col w-full flex md:flex-row items-center align-middle md:justify-between md:px-5 md:py-5 drop-shadow-2xl shadow-2xl"
         >
             <div className='flex gap-3 items-center justify-center md:w-full'>
                 <img src={Logo} alt="logo" className="w-[50px]" />
