@@ -2,12 +2,12 @@ import serverImage from '#/server-status.svg'
 import todoImage from '#/to-do-app.svg'
 import visualImage from '#/visual-data.svg'
 
-import Card, { CardContent, CardHeader, CardImage } from "@/components/ui/Card/Card"
+import Card, { CardContent, CardHeader, CardHolder, CardImage } from "@/components/ui/Card/Card"
 import Text from "@/components/ui/Typography/Text/Text"
 export default function Content() {
     return (
         <div className='bg-gray-900 min-h-200 p-5'>
-            <div className="rounded-2xl shadow-2xl ring-sky-950 bg-blue-950 w-full p-5 flex justify-center flex-col md:flex-row gap-5">
+            <CardHolder>
                 <Card>
                     <CardImage src={visualImage} />
                     <CardHeader>
@@ -41,8 +41,7 @@ export default function Content() {
                         </Text>
                     </CardContent>
                 </Card>
-            </div>
-
+            </CardHolder>
         </div>
     )
 }
