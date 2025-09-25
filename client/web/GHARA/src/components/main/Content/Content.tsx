@@ -1,8 +1,10 @@
 import serverImage from '../../../../public/server-status.svg'
 import todoImage from '../../../../public/to-do-app.svg'
-import visualImage from '../../../../public/visual-data.svg'
-import Card, { CardContent, CardHeader, CardImage } from "../../ui/Card/Card"
-import Text from "../../ui/Typography/Text/Text"
+// import visualImage from '../../../../public/visual-data.svg'
+import visualImage from '#/visual-data.svg'
+
+import Card, { CardContent, CardHeader, CardImage } from "@/components/ui/Card/Card"
+import Text from "@/components/ui/Typography/Text/Text"
 export default function Content() {
     return (
         <div className='bg-gray-900 min-h-200 p-5'>
