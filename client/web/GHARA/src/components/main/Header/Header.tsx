@@ -1,4 +1,4 @@
-import { MdOutlineAccountCircle } from 'react-icons/md';
+import { MdInstallMobile, MdOutlineAccountCircle } from 'react-icons/md';
 import Logo from '../../../../public/logo.svg';
 import Button from "../../ui/Button/Button";
 export default function Header() {
@@ -17,10 +17,10 @@ export default function Header() {
 
             </div>
             <nav
-                className="w-full flex gap-1 justify-evenly mt-3 md:mt-0"
+                className="w-full md:w-1/2 flex gap-1 justify-evenly mt-3 md:mt-0"
             >
-                <Button variant="ghost" size='sm' text='Install' />
-                <Button variant="ghost" size='sm' text='About' />
+                <Button variant="ghost" size='sm' text='Learn More' />
+                <Button variant="outlined" size='sm' text='Install' icon={<MdInstallMobile />} />
                 <Button variant="solid" size='sm' text='Login' icon={<MdOutlineAccountCircle />} />
             </nav>
         </header>
