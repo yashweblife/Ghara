@@ -5,7 +5,7 @@ export type CardHolderProps = {
 }
 export function CardHolder({ children }: CardHolderProps) {
     return (
-        <div className="rounded-2xl shadow-2xl ring-sky-950 bg-blue-950 w-full p-5 flex justify-center flex-col md:flex-row gap-5">
+        <div className="rounded-2xl shadow-2xl ring-sky-950 bg-cyan-950 w-full p-5 flex justify-center flex-col md:flex-row gap-5 flex-wrap">
             {children}
         </div>
     )
@@ -50,7 +50,7 @@ export function CardContent({ children }: CardContentProps) {
 export type CardProps = BaseComponent & {
 }
 export default function Card({ children, className }: CardProps) {
-    const defaultClasses = "rounded-2xl shadow-2xl ring-sky-950 bg-gray-900 w-full"
+    const defaultClasses = "rounded-2xl shadow-2xl ring-sky-950 bg-gray-900 w-full max-w-120"
     const finalClasses = [defaultClasses, className].join(' ')
     return (
         <div className={finalClasses}>
