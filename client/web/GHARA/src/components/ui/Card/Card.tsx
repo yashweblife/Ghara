@@ -1,4 +1,16 @@
+import type { ReactNode } from "react"
 import type { BaseComponent } from "../../../lib"
+export type CardHolderProps = {
+    children?: ReactNode
+}
+export function CardHolder({ children }: CardHolderProps) {
+    return (
+        <div className="rounded-2xl shadow-2xl ring-sky-950 bg-blue-950 w-full p-5 flex justify-center flex-col md:flex-row gap-5">
+            {children}
+        </div>
+    )
+}
+
 export type CardImageProps = {
     src: string
     className?: string
