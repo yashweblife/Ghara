@@ -1,13 +1,8 @@
-import { useState } from 'react';
-import { AiOutlineSun } from 'react-icons/ai';
-import { MdOutlineAccountCircle, MdOutlineDarkMode } from 'react-icons/md';
+import { MdOutlineAccountCircle } from 'react-icons/md';
 import Logo from '../../../../public/logo.svg';
 import Button from "../../ui/Button/Button";
 export default function Header() {
-    const [themeMode, setThemeMode] = useState(false);
-    const handleThemeChange = () => {
-        setThemeMode(prev => !prev);
-    }
+
     return (
         <header
             className="dark:bg-gray-900 py-10 px-2 flex-col w-full flex md:flex-row items-center align-middle md:justify-between md:px-5 md:py-5"
@@ -26,13 +21,6 @@ export default function Header() {
             >
                 <Button variant="ghost" size='sm' text='Install' />
                 <Button variant="ghost" size='sm' text='About' />
-                <Button
-                    variant={themeMode ? "outlined" : 'solid'}
-                    rounded='full'
-                    size='sm'
-                    icon={themeMode ? <MdOutlineDarkMode /> : <AiOutlineSun />}
-                    onClick={handleThemeChange}
-                />
                 <Button variant="solid" size='sm' text='Login' icon={<MdOutlineAccountCircle />} />
             </nav>
         </header>
