@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Header from "./components/main/Header/Header";
 import Hero from "./components/main/Hero/Hero";
+import Content from "./components/main/Content/Content";
 function App() {
   useEffect(() => {
     test()
@@ -21,6 +22,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Content />
     </>
   )
 }
