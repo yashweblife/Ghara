@@ -53,7 +53,7 @@ export default function Button({
             'bg-sky-600 hover:bg-sky-700 text-white shadow-lg shadow-sky-500/20 focus:ring-sky-300',
         // Elegant Outlined Variant
         outlined:
-            'bg-white text-sky-600 border border-sky-600 hover:bg-sky-50 hover:border-sky-700 focus:ring-sky-300',
+            'bg-transparent text-sky-600 border border-sky-600 hover:bg-sky-50 hover:border-sky-700 focus:ring-sky-300',
         // Subtle Ghost Variant
         ghost:
             'bg-transparent text-sky-600 hover:bg-sky-100 hover:text-sky-700 focus:ring-sky-300',
