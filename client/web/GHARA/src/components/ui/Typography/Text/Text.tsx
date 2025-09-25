@@ -2,12 +2,12 @@ import type { ReactNode } from "react";
 
 export interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
     children: ReactNode
-    className: string
+    className?: string
     center?: boolean
     bold?: boolean
 }
 
-export default function Text({ children, className, center = false, bold = false, ...props }: TextProps) {
+export default function Text({ children, className = '', center = false, bold = false, ...props }: TextProps) {
     const defaultClasses = 'dark:text-white'
     const centered = center && 'text-center'
     const bolded = bold && 'font-bold'
