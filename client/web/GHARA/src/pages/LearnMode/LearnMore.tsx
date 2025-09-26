@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Page() {
     return (
         <>
-            <Header title="Ghara | Learn More">
+            <Header title="Ghara">
                 <Link to='/'>
                     <Button icon={<MdOutlineHome />} size='sm' variant="ghost" text='Home' />
                 </Link>
