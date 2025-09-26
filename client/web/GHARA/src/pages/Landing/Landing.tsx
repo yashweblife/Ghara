@@ -24,10 +24,10 @@ export default function Page() {
                 <Button variant="solid" size='sm' text='Login' icon={<MdOutlineAccountCircle />} />
             </Header>
             <Hero>
-                <Text center className="text-2xl md:text-4xl" bold>
+                <Text center className="text-3xl md:text-4xl text-shadow-xs drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" bold>
                     Take control of your <Bold text='Ghara' />
                 </Text>
-                <Text center className='md:w-[45ch] text-gray-500 md:text-2xl'>
+                <Text center className='md:w-[45ch] text-gray-500 md:text-2xl text-shadow-xs drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]'>
                     Manage your <Bold text='groceries' />, Award your <Bold text='effort' /> and track your < Bold text='spending' />
                 </Text>
                 <Button variant="solid" className="mt-5" size='lg' rounded="pill" text='Get The App' icon={<AiFillAndroid />} />
