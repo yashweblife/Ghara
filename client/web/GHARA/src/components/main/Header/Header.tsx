@@ -1,8 +1,10 @@
-import { MdInstallMobile, MdOutlineAccountCircle } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import type { BaseComponent } from '@/lib';
 import Logo from '../../../../public/logo.svg';
-import Button from "../../ui/Button/Button";
-export default function Header() {
+
+export type HeaderProps = BaseComponent & {
+    title?: string
+}
+export default function Header({ children, title }: HeaderProps) {
 
     return (
         <header
@@ -13,17 +15,13 @@ export default function Header() {
                 <h1
                     className="text-4xl font-bold text-gray-800 dark:text-white"
                 >
-                    GHARA
+                    {title ?? 'Ghara'}
                 </h1>
             </div>
             <nav
                 className="w-full md:w-1/2 flex gap-1 justify-evenly mt-3 md:mt-0"
             >
-                <Link to='learn-more'>
-                    <Button variant="ghost" size='sm' text='Learn More' />
-                </Link>
-                <Button variant="outlined" size='sm' text='Install' icon={<MdInstallMobile />} />
-                <Button variant="solid" size='sm' text='Login' icon={<MdOutlineAccountCircle />} />
+                {children}
             </nav>
         </header>
     )
