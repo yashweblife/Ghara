@@ -23,7 +23,7 @@ export default function Page() {
                 <Text className="text-4xl text-shadow-xs drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]" center bold>Learn How To Use & Set Things Up</Text>
                 <nav className=" w-full md:w-1/2 flex flex-col justify-center md:flex-row gap-3 mt-10">
                     <Button className="drop-shadow-2xl w-[100%] ring-3 ring-sky-800" rounded='pill' icon={<FaServer />} text='Server Setup' />
-                    <Button className="drop-shadow-2xl w-[100%] ring-3 ring-sky-800" rounded='pill' icon={<SiGoogledocs />} text='App Use' />
+                    <Button className="drop-shadow-2xl w-[100%] ring-3 ring-sky-800" rounded='pill' icon={<SiGoogledocs />} text='App Setup' />
                     <Button className="drop-shadow-2xl w-[100%] ring-3 ring-sky-800" rounded='pill' icon={<FaQuestion />} text='FAQ' />
                 </nav>
             </Hero >
