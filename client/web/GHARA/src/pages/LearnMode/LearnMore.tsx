@@ -1,3 +1,4 @@
+import Content from "@/components/main/Content/Content";
 import Header from "@/components/main/Header/Header";
 import Button from "@/components/ui/Button/Button";
 import { MdInstallMobile, MdOutlineAccountCircle, MdOutlineHome } from "react-icons/md";
@@ -13,6 +14,7 @@ export default function Page() {
                 <Button icon={<MdInstallMobile />} size='sm' variant="outlined" text='Install' />
                 <Button icon={<MdOutlineAccountCircle />} size='sm' variant="solid" text='Login' />
             </Header>
+            <Content></Content>
         </>
     )
 }
