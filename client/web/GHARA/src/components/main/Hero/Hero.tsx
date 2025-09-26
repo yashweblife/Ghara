@@ -4,7 +4,7 @@ import Bold from "../../ui/Typography/Bold/Bold";
 import Text from "../../ui/Typography/Text/Text";
 export default function Hero() {
     return (
-        <div className='dark:bg-gray-900 bg-gray-100 h-112 p-4 sm:p-8 flex justify-center items-center flex-col gap-3 bg-[url("../../../../public/bg.svg")] bg-no-repeat bg-center'>
+        <div className='dark:bg-gray-900 bg-gray-100 h-112 p-4 sm:p-8 flex justify-center items-center flex-col gap-3 bg-[url("../../../../public/test.svg")] bg-no-repeat bg-center z-1'>
             <Text center className="text-2xl md:text-4xl" bold>
                 Take control of your <Bold text='Ghara' />
             </Text>
