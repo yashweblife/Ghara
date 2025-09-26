@@ -1,17 +1,28 @@
-import { AiFillAndroid } from "react-icons/ai";
-import Button from "../../ui/Button/Button";
-import Bold from "../../ui/Typography/Bold/Bold";
-import Text from "../../ui/Typography/Text/Text";
-export default function Hero() {
+import type { BaseComponent } from "@/lib"
+import bg from '../../../assets/bg.svg'
+import bg1 from '../../../assets/bg1.svg'
+import bg2 from '../../../assets/bg2.svg'
+import bg3 from '../../../assets/bg3.svg'
+import bg4 from '../../../assets/bg4.svg'
+export type HeroProps = BaseComponent & {
+    variant?: 'blob' | 'wave' | 'sunset' | 'warm' | 'cool'
+}
+
+export default function Hero({ children, variant = 'sunset' }: HeroProps) {
+    const herobg = {
+        blob: bg,
+        wave: bg1,
+        sunset: bg2,
+        warm: bg3,
+        cool: bg4
+    }
+    const defaultClasses = 'dark:bg-gray-900 bg-cover bg-left bg-gray-100 h-112 p-4 sm:p-8 flex justify-center items-center flex-col gap-3 bg-no-repeat bg-center z-1'
+    const finalClasses = defaultClasses
     return (
-        <div className='dark:bg-gray-900 bg-gray-100 h-112 p-4 sm:p-8 flex justify-center items-center flex-col gap-3 bg-[url("../../../../public/test.svg")] bg-no-repeat bg-center z-1'>
-            <Text center className="text-2xl md:text-4xl" bold>
-                Take control of your <Bold text='Ghara' />
-            </Text>
-            <Text center className='md:w-[45ch] text-gray-500 md:text-2xl'>
-                Manage your <Bold text='groceries' />, Award your <Bold text='effort' /> and track your < Bold text='spending' />
-            </Text>
-            <Button variant="solid" className="mt-5" size='lg' rounded="pill" text='Get The App' icon={<AiFillAndroid />} />
+        <div className={finalClasses} style={{
+            backgroundImage: `url(${herobg[variant]})`
+        }}>
+            {children}
         </div>
     )
 }
