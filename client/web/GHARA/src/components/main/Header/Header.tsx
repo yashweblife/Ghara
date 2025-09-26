@@ -19,7 +19,7 @@ export default function Header({ children, title }: HeaderProps) {
                 </h1>
             </div>
             <nav
-                className="w-full md:w-1/2 flex gap-1 justify-evenly mt-3 md:mt-0"
+                className="w-full md:w-1/2 flex gap-1 justify-between md:justify-evenly mt-3 md:mt-0"
             >
                 {children}
             </nav>
