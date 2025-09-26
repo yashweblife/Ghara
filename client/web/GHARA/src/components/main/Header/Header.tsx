@@ -1,5 +1,5 @@
+import Logo from '#/logo.svg';
 import type { BaseComponent } from '@/lib';
-import Logo from '../../../../public/logo.svg';
 
 export type HeaderProps = BaseComponent & {
     title?: string
