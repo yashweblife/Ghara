@@ -1,29 +1,15 @@
-import { useEffect } from "react";
-import Header from "./components/main/Header/Header";
-import Hero from "./components/main/Hero/Hero";
-import Content from "./components/main/Content/Content";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/Landing/Landing';
+import LearnMorePage from './pages/LearnMode/LearnMore';
 function App() {
-  useEffect(() => {
-    test()
-  }, [])
-  const test = async () => {
-    try {
-      const res = await fetch('/api/food')
-      if (res.status !== 200) {
-        throw new Error('Failed to fetch data')
-      }
-      const data = await res.json()
-      console.log(data)
-    } catch (error) {
-      console.error(error)
-    }
-  }
+
   return (
-    <>
-      <Header />
-      <Hero />
-      <Content />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/learn-more' element={<LearnMorePage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
