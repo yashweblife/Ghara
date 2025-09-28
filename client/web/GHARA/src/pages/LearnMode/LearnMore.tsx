@@ -38,24 +38,20 @@ export default function Page() {
                 </nav>
             </Hero >
             <Content className='p-10 gap-5 flex flex-col'>
-                <Text className="text-3xl" id='test1'>Server Setup</Text>
-                <Text bold>What to Expect</Text>
-                <Text >
+                <Text className="text-3xl text-center md:text-left" id='test1'>Server Setup</Text>
+                <Text bold className="text-center md:text-left">What to Expect</Text>
+                <Text className="text-center md:text-left">
                     The server is critical to the functioning of the app, here are some things you will need in order to get your own server running
                 </Text>
-                <Text className="text-3xl">Prequesites tools</Text>
+                <Text className="text-3xl text-center md:text-left">Prequesites tools</Text>
                 <LinkList items={links} />
+                <hr className="text-white" />
+                <Text className="text-3xl text-center md:text-left" id='test2'>Server Setup</Text>
+                <Text bold className="text-center md:text-left">What to Expect</Text>
+                <Text className="text-center md:text-left">
+                    The server is critical to the functioning of the app, here are some things you will need in order to get your own server running
+                </Text>
 
-                <Text className="text-3xl" id='test2'>Server Setup</Text>
-                <Text bold>What to Expect</Text>
-                <Text>
-                    The server is critical to the functioning of the app, here are some things you will need in order to get your own server running
-                </Text>
-                <Text className="text-3xl" id='test3'>Server Setup</Text>
-                <Text bold>What to Expect</Text>
-                <Text>
-                    The server is critical to the functioning of the app, here are some things you will need in order to get your own server running
-                </Text>
             </Content>
         </>
     )
