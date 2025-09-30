@@ -51,7 +51,9 @@ export default function Page() {
                 <Text className="text-center md:text-left">
                     The server is critical to the functioning of the app, here are some things you will need in order to get your own server running
                 </Text>
-
+                <hr className="text-white" />
+                <Text className="text-3xl text-center md:text-left" id='app-setup'>App Setup</Text>
+                <Text className="text-center md:text-left">Installation</Text>
             </Content>
         </>
     )
