@@ -34,20 +34,48 @@ Essential commands:
 # clone the repo
 git clone https://github.com/yashweblife/Ghara.git
 
-# installation
-cd server && npm install
-cd ..
-cd client/GHARA && npm install
-cd ../web/GHARA && npm install
+cd Ghara
+```
+`ctrl`+`shift`+`p` open command pallette in vscode
 
-# start the server
-cd server && npm run dev
+`Open in Dev Container` select this option
 
-# start the client
-cd ../client/GHARA && npm run start
+### Setup the server `.env`
 
-# start the web
-cd ../web/GHARA && npm run dev
+Make a new `.env` file. Copy everything from the `.env.example` into `.env`. If the port is busy, change it in your `.env` till it works
+
+### Setup the client `Vite.config.ts`
+
+If you had to change the server port, you will need to reflect the changes in the `vite.config.ts`
+
+[`vite.config.ts`](./client/web/vite.config.ts#L17)
+
+```typescript
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5170', // <-- change the port here
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  }
+  ...
 ```
 
-Once we have docker integrated, these things will become easier to manage (I promise).
+```bash
+# using pnpm to install and run
+pnpm install
+
+# dev
+pnpm dev:web # web dev
+pnpm dev:app # app dev
+pnpm dev:server # server
+```
+
+
+#### If you didnt have to change anything:
+The webapp should start at [this url](http://localhost:5173)<br/>
+The server should start at [this url](http://localhost:5170)
