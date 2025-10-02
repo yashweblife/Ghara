@@ -10,7 +10,7 @@ export default function LinkList({ items }: LinkListProps) {
                 Object.keys(items).length > 0 && Object.keys(items).map((item) =>
                     <li key={item} className="border-b-2 border-b-sky-900 max-w-[150px] text-center">
                         <a href={items[item]}>
-                            <Text className="text-2xl text-sky-400!">
+                            <Text className="text-2xl text-sky-400 hover:text-sky-900">
                                 {item}
                             </Text>
                         </a>
