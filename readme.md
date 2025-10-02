@@ -20,13 +20,12 @@ and various other things.
 ## For developers
 
 Stack:
-- PNPM
-- Expo
-- React Native
-- Typescript
-- Prisma
-- Tailwind
-- Sqlite
+- [PNPM](https://pnpm.io/installation)
+- [Expo](https://docs.expo.dev/get-started/introduction/)
+- [Typescript](https://www.typescriptlang.org/docs/)
+- [Prisma](https://www.prisma.io/docs)
+- [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
+- [Sqlite](https://sqlite.org/docs.html)
 
 Essential commands:
 
