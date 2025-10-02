@@ -20,6 +20,7 @@ and various other things.
 ## For developers
 
 Stack:
+- PNPM
 - Expo
 - React Native
 - Typescript
