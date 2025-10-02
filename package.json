@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:web":"pnpm --filter ghara-web dev",
+    "dev:app":"pnpm --filter ghara start",
+    "dev:server":"pnpm --filter server dev"
   },
   "keywords": [],
   "author": "",
