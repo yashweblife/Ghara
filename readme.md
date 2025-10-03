@@ -98,3 +98,6 @@ pnpm dev:server # server
 #### If you didnt have to change the port:
 The webapp should start at [this url](http://localhost:5173)<br/>
 The server should start at [this url](http://localhost:5170)
+
+
+<img src="./client/web/src/assets/bg3.svg"/>
