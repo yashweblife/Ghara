@@ -35,7 +35,8 @@ and various other things.
 > - [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
 > - [Sqlite](https://sqlite.org/docs.html)
 > - [Storybook](https://storybook.js.org/docs)
-Essential commands in steps:
+
+## Essential commands in steps:
 
 ### Step 1 : Clone
 ```bash
