@@ -1,6 +1,6 @@
-<div dir='center' style='width:100%;text-align:center'>
+<p align='center' style='width:100%;text-align:center'>
   <img src='./client/web/src/assets/logo.svg' width='160'/>
-</div>
+</p>
 
 # Ghara
 #### It means home.
