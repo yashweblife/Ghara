@@ -1,4 +1,4 @@
-<div style='text-align:center'>
+<div style='width:100%;text-align:center'>
   <img src='./client/web/src/assets/logo.svg' width='160'/>
 </div>
 
