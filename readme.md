@@ -21,11 +21,11 @@ and various other things.
 
 ## For developers
 
-| Projects | PNPM | EXPO | TYPESCRIPT | PRISMA | TAILWIND | SQLITE |
-| :------: | :--: | :--: | :--------: | :----: | :------: | :----: |
-| Server   | 👍   | x    | 👍         | 👍     | x        | 👍     |
-| WebApp   | 👍   | x    | 👍         | x      | 👍       | x      |
-| Mobile App | 👍 | 👍   | 👍         | x      | x        | x      |
+| Projects | PNPM | EXPO | TYPESCRIPT | PRISMA | TAILWIND | SQLITE | Storybook |
+| :------: | :--: | :--: | :--------: | :----: | :------: | :----: | :-------: |
+| Server   | 👍   | x    | 👍         | 👍     | x        | 👍     | x         |
+| WebApp   | 👍   | x    | 👍         | x      | 👍       | x      | 👍        |
+| Mobile App | 👍 | 👍   | 👍         | x      | x        | x      | x         |
 
 > ### Links For Stack:
 > - [PNPM](https://pnpm.io/installation)
@@ -34,7 +34,7 @@ and various other things.
 > - [Prisma](https://www.prisma.io/docs)
 > - [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
 > - [Sqlite](https://sqlite.org/docs.html)
-
+> - [Storybook](https://storybook.js.org/docs)
 Essential commands in steps:
 
 ### Step 1 : Clone
