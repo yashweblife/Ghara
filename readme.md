@@ -23,7 +23,7 @@ and various other things.
 
 
 
-## For developers
+## For developers 💻
 
 | Projects | PNPM | EXPO | TYPESCRIPT | PRISMA | TAILWIND | SQLITE | Storybook |
 | :------: | :--: | :--: | :--------: | :----: | :------: | :----: | :-------: |
@@ -40,7 +40,7 @@ and various other things.
 > - [Sqlite](https://sqlite.org/docs.html) lightweight db for local scalablilty
 > - [Storybook](https://storybook.js.org/docs) visual curation of components
 
-## Essential commands in steps:
+## Essential commands in steps: 👣
 
 ### Step 1 : Clone
 ```bash
@@ -99,5 +99,9 @@ pnpm dev:server # server
 The webapp should start at [this url](http://localhost:5173)<br/>
 The server should start at [this url](http://localhost:5170)
 
+
+### Further Instructions
+
+Each project has its own readme files that tell you what to do as well, read them carefully
 
 <img src="./client/web/src/assets/bg3.svg"/>
