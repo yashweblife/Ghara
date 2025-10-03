@@ -17,15 +17,23 @@ The idea is to make it as simple as possible to set up and use.
 
 and various other things. 
 
+
+
 ## For developers
 
-Stack:
-- [PNPM](https://pnpm.io/installation)
-- [Expo](https://docs.expo.dev/get-started/introduction/)
-- [Typescript](https://www.typescriptlang.org/docs/)
-- [Prisma](https://www.prisma.io/docs)
-- [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
-- [Sqlite](https://sqlite.org/docs.html)
+| Projects | PNPM | EXPO | TYPESCRIPT | PRISMA | TAILWIND | SQLITE |
+| :------: | :--: | :--: | :--------: | :----: | :------: | :----: |
+| Server   | 👍   | x    | 👍         | 👍     | x        | 👍     |
+| WebApp   | 👍   | x    | 👍         | x      | 👍       | x      |
+| Mobile App | 👍 | 👍   | 👍         | x      | x        | x      |
+
+> ### Links For Stack:
+> - [PNPM](https://pnpm.io/installation)
+> - [Expo](https://docs.expo.dev/get-started/introduction/)
+> - [Typescript](https://www.typescriptlang.org/docs/)
+> - [Prisma](https://www.prisma.io/docs)
+> - [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
+> - [Sqlite](https://sqlite.org/docs.html)
 
 Essential commands in steps:
 
