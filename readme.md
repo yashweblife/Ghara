@@ -28,13 +28,13 @@ and various other things.
 | Mobile App | 👍 | 👍   | 👍         | x      | x        | x      | x         |
 
 > ### Links For Stack:
-> - [PNPM](https://pnpm.io/installation)
-> - [Expo](https://docs.expo.dev/get-started/introduction/)
-> - [Typescript](https://www.typescriptlang.org/docs/)
-> - [Prisma](https://www.prisma.io/docs)
-> - [Tailwind](https://tailwindcss.com/docs/installation/using-vite)
-> - [Sqlite](https://sqlite.org/docs.html)
-> - [Storybook](https://storybook.js.org/docs)
+> - [PNPM](https://pnpm.io/installation) used for package management across all projects
+> - [Expo](https://docs.expo.dev/get-started/introduction/) react native wrapper for better compatibility
+> - [Typescript](https://www.typescriptlang.org/docs/) used for sanity of devs
+> - [Prisma](https://www.prisma.io/docs) used to manage db
+> - [Tailwind](https://tailwindcss.com/docs/installation/using-vite) nice css styles
+> - [Sqlite](https://sqlite.org/docs.html) lightweight db for local scalablilty
+> - [Storybook](https://storybook.js.org/docs) visual curation of components
 
 ## Essential commands in steps:
 
