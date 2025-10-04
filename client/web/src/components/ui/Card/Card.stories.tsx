@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import todoImage from '../../../../public/to-do-app.svg';
+import todoImage from '../../../assets/to-do-app.svg';
 
 import Text from '../Typography/Text/Text';
 import Card, { CardContent, CardHeader, CardImage } from './Card';
