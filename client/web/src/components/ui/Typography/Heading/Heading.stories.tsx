@@ -12,5 +12,18 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    children: "Hello World"
+  }
+};
+export const Variant: Story = {
+  args: {
+    children: "Hello World",
+    variant: 'h2'
+  }
+};
+export const Classes: Story = {
+  args: {
+    children: "Hello World",
+    className: 'hover:text-sky-500'
   }
 };
