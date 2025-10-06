@@ -5,12 +5,11 @@ export function CardHolder({ children, className }: CardHolderProps) {
     const defaultClasses = 'rounded-2xl shadow-2xl ring-sky-950 bg-cyan-950 w-full p-5 flex justify-center flex-col md:flex-row gap-5 flex-wrap'
     const finalClasses = [defaultClasses, className].join(' ')
     return (
-        <div className={finalClasses}>
+        <dt className={finalClasses}>
             {children}
-        </div>
+        </dt>
     )
 }
-
 export type CardImageProps = {
     src: string
     className?: string
@@ -25,8 +24,6 @@ export function CardImage({ src, className = '' }: CardImageProps) {
         </div>
     )
 }
-
-
 export type CardHeaderProps = BaseComponent & {
 
 }
@@ -41,12 +38,11 @@ export type CardContentProps = BaseComponent & {
 }
 export function CardContent({ children }: CardContentProps) {
     return (
-        <div className="p-5">
+        <dl className="p-5">
             {children}
-        </div>
+        </dl>
     )
 }
-
 export type CardProps = BaseComponent & {
 }
 export default function Card({ children, className }: CardProps) {
