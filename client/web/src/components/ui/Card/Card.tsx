@@ -12,15 +12,25 @@ export function CardHolder({ children, className }: CardHolderProps) {
 }
 export type CardImageProps = {
     src: string
+    alt?: string
     className?: string
 }
-export function CardImage({ src, className = '' }: CardImageProps) {
+export function CardImage({ src, alt = '', className = '' }: CardImageProps) {
     const defaultClasses = "w-full p-5 rounded-t-lg"
     const finalClasses = [defaultClasses, className].join(' ')
     console.log('test', finalClasses)
     return (
         <div className={finalClasses}>
-            <img src={src} alt="image" className='aspect-square max-h-100' />
+            {
+                src ?
+                    (
+                        <figure>
+                            <div className="w-full bg-gray-800"></div>
+                            <img src={src} alt="image" className='aspect-square max-h-100' />
+                            {alt ? <figcaption className="sr-only">{alt}</figcaption> : null}
+                        </figure>
+                    ) : null
+            }
         </div>
     )
 }
@@ -49,8 +59,8 @@ export default function Card({ children, className }: CardProps) {
     const defaultClasses = "rounded-2xl shadow-2xl ring-sky-950 bg-gray-900 max-w-sm grid grid-cols-1"
     const finalClasses = [defaultClasses, className].join(' ')
     return (
-        <div className={finalClasses}>
+        <article className={finalClasses}>
             {children}
-        </div>
+        </article>
     )
 }
