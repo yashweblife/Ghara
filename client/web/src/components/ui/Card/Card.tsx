@@ -39,9 +39,9 @@ export type CardHeaderProps = BaseComponent & {
 }
 export function CardHeader({ children }: CardHeaderProps) {
     return (
-        <div className="text-2xl p-5">
+        <header className="text-2xl p-5">
             {children}
-        </div>
+        </header>
     )
 }
 export type CardContentProps = BaseComponent & {
