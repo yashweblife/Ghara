@@ -21,5 +21,5 @@ export default function Heading({
     const Tag: keyof JSX.IntrinsicElements = variant
     const defaultClasses = headingStyles[variant]
     const finalClasses = [defaultClasses, className].join(' ')
-    return (<Tag className={finalClasses}>{children}</Tag>)
+    return (<Tag className={finalClasses} {...props}>{children}</Tag>)
 }
