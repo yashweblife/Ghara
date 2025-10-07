@@ -8,7 +8,7 @@ import {
     updateUserById
 } from "../controllers/user-controller";
 
-const router = Router();
+const router: Router = Router();
 
 /**
  * Routes for user
