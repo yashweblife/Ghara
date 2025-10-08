@@ -1,0 +1,35 @@
+[
+    {
+        "path":"/user",
+        "endpoints":[
+            {
+                "name":"Get all users",
+                "method":"get",
+                "path":"/"
+            },
+            {
+                "name":"Create a user",
+                "method":"post",
+                "path":"/",
+                "body":{
+                    "username":"test user",
+                    "password":"11111111",
+                    "email":"test@test.com"
+                }
+            },
+            {
+                "name":"Get user with ID",
+                "method":"get",
+                "path":"/",
+                "body":{
+                    "id":"asdsagsdfgsdf"
+                }
+            },
+            {
+                "name":"Get user points",
+                "method":"get",
+                "path":"/points"
+            }
+        ]
+    }
+]
