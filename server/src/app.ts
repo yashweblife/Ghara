@@ -1,12 +1,12 @@
 import cors from 'cors';
-import express, { type Request, type Response } from 'express';
+import express, { type Express, type Request, type Response } from 'express';
 import FoodRoute from './routes/food-route';
 import IngredientRoute from './routes/ingredient-route';
 import PointRoute from './routes/point-route';
 import ProductRoute from './routes/product-route';
 import UserRoute from './routes/user-route';
 
-const app = express();
+const app: Express = express();
 
 app.use(cors());
 app.use(express.json());
